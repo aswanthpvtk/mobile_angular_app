@@ -1,0 +1,45 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 div-md-12 col-lg-12 div-xl-12 div-xxl-12">
+            
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <h1 class="text-center">Phone</h1>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Company:</label>
+                    <input name="ph" [(ngModel)]="ph" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Model:</label>
+                    <input name="mo" [(ngModel)]="mo" type="text" class="form-control">
+                    
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="form-label">Serial no:</label>
+                    <input name="sr" [(ngModel)]="sr" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">IMEI:</label>
+                    <input name="im" [(ngModel)]="im" type="text" class="form-control">
+
+                </div>
+                
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <label for="" class="form-label">image:</label>
+                    <input name="img" [(ngModel)]="img" type="file" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+                    <button (click)="readValues()" class="btn btn-success">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
