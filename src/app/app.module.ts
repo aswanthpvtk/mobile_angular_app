@@ -7,18 +7,34 @@ import { AddmobComponent } from './addmob/addmob.component';
 import { FormsModule } from '@angular/forms';
 import { ViewmobComponent } from './viewmob/viewmob.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterModule, Routes } from '@angular/router';
 
+
+const myroute:Routes =[
+
+  {
+    path :"",
+    component :AddmobComponent
+  },
+  {
+    path :"v",
+    component :ViewmobComponent
+  },
+]
 @NgModule({
   declarations: [
     AppComponent,
     AddmobComponent,
-    ViewmobComponent
+    ViewmobComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot(myroute)
   ],
   providers: [],
   bootstrap: [AppComponent]
